@@ -110,7 +110,7 @@ function App() {
 <section id="gallery" className="gallery">
   <h2>Our Work</h2>
   <div className="instagram-feed-container">
-    <div class="elfsight-app-78d0224b-f4eb-491a-8b84-47fe5a5bd765" data-elfsight-app-lazy></div>
+    <div class="elfsight-app-8d0224b-f4eb-491a-8b84-47fe5a5bd765" data-elfsight-app-lazy></div>
   </div>
 </section>
 
