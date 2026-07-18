@@ -1,10 +1,6 @@
 import React from 'react';
 import './App.css';
 
-import photo1 from './images/IMG_6345.JPG';
-import photo2 from './images/IMG_6593.JPG';
-import photo3 from './images/IMG_6613.JPG';
-import photo4 from './images/IMG_7431.JPG';
 
 function App() {
   const scrollToSection = (section) => {
