@@ -33,7 +33,7 @@ function App() {
       <section id="home" className="hero">
         <div className="hero-content">
           <h2>Welcome to LashesWLex</h2>
-          <p>Professional Lash Extensions & Services</p>
+          <p>Home-Based Certified Lash Technician</p>
           <button className="cta-button" onClick={() => scrollToSection('booking')}>
             Book Your Appointment
           </button>
