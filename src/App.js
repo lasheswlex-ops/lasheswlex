@@ -134,10 +134,10 @@ function App() {
             📅 Click below to book your appointment
           </p>
           <button className="booking-button" onClick={() => {
-            alert('Booking coming soon! For now, contact us directly.');
-          }}>
-            Reserve Your Spot
-          </button>
+  window.open('https://app.squareup.com/appointments/book/gilb366psvk4r4/LCCB3VAS3CVDG/start', '_blank');
+}}>
+  Reserve Your Spot
+</button>
           <p className="booking-alternate">
             Or contact us directly at your phone number or email!
           </p>
