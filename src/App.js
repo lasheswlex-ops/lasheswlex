@@ -109,19 +109,8 @@ function App() {
       {/* Gallery Section */}
 <section id="gallery" className="gallery">
   <h2>Our Work</h2>
-  <div className="gallery-grid">
-    <div className="gallery-item">
-      <img src={photo1} alt="Lash Extensions" style={{width: '100%', height: '250px', objectFit: 'cover'}} />
-    </div>
-    <div className="gallery-item">
-      <img src={photo2} alt="Lash Extensions" style={{width: '100%', height: '250px', objectFit: 'cover'}} />
-    </div>
-    <div className="gallery-item">
-      <img src={photo3} alt="Lash Extensions" style={{width: '100%', height: '250px', objectFit: 'cover'}} />
-    </div>
-    <div className="gallery-item">
-      <img src={photo4} alt="Lash Extensions" style={{width: '100%', height: '250px', objectFit: 'cover'}} />
-    </div>
+  <div className="instagram-feed-container">
+    <div class="elfsight-app-78d0224b-f4eb-491a-8b84-47fe5a5bd765" data-elfsight-app-lazy></div>
   </div>
 </section>
 

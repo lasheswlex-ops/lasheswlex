@@ -228,7 +228,7 @@ body {
 .gallery h2 {
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   color: #2d5a47;
   font-weight: 800;
 }
@@ -237,48 +237,31 @@ body {
   content: ' 📸';
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 3rem auto 0;
-}
-
-.gallery-item {
-  overflow: hidden;
+.instagram-feed-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(90, 143, 111, 0.15);
-  transition: transform 0.3s;
+  box-shadow: 0 10px 40px rgba(90, 143, 111, 0.15);
 }
 
-.gallery-item:hover {
-  transform: scale(1.05);
+.instagram-feed-container .elfsight-app-78d0224b-f4eb-491a-8b84-47fe5a5bd765 {
+  margin: 0 auto;
 }
 
-.gallery-item img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-}
+@media (max-width: 768px) {
+  .gallery {
+    padding: 3rem 1rem;
+  }
 
-.gallery-placeholder {
-  background: linear-gradient(135deg, #d4e8e0 0%, #e8f4f0 100%);
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #999;
-  font-size: 1rem;
-  text-align: center;
-}
+  .gallery h2 {
+    font-size: 2rem;
+  }
 
-.gallery-note {
-  text-align: center;
-  color: #888;
-  font-style: italic;
-  margin-top: 2rem;
+  .instagram-feed-container {
+    padding: 1.5rem;
+  }
 }
 
 /* Booking Section */
