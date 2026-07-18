@@ -19,7 +19,7 @@ function App() {
       {/* Navigation */}
       <nav className="navbar">
         <div className="nav-container">
-          <h1 className="logo">Lashes With Lex</h1>
+          <h1 className="logo">LashesWLex</h1>
           <ul className="nav-links">
             <li><button onClick={() => scrollToSection('home')}>Home</button></li>
             <li><button onClick={() => scrollToSection('services')}>Services</button></li>
@@ -32,7 +32,7 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="hero">
         <div className="hero-content">
-          <h2>Welcome to Lashes With Lex</h2>
+          <h2>Welcome to LashesWLex</h2>
           <p>Professional Lash Extensions & Services</p>
           <button className="cta-button" onClick={() => scrollToSection('booking')}>
             Book Your Appointment
