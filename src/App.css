@@ -1,3 +1,27 @@
+@keyframes blink {
+  0%, 49%, 100% {
+    opacity: 1;
+  }
+  50%, 99% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 10px #6fa876, 0 0 20px rgba(111, 168, 118, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px #6fa876, 0 0 30px rgba(111, 168, 118, 0.8);
+  }
+}
+
+.lash-emoji {
+  display: inline-block;
+  animation: blink 3s infinite, glow 2s infinite;
+  font-size: 1.2em;
+}
+
 * {
   margin: 0;
   padding: 0;

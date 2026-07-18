@@ -19,7 +19,7 @@ function App() {
       {/* Navigation */}
       <nav className="navbar">
         <div className="nav-container">
-          <h1 className="logo">LashesWLex</h1>
+         <h1 className="logo"><span className="lash-emoji">✨</span> LashesWLex</h1>
           <ul className="nav-links">
             <li><button onClick={() => scrollToSection('home')}>Home</button></li>
             <li><button onClick={() => scrollToSection('services')}>Services</button></li>
@@ -107,10 +107,11 @@ function App() {
       </section>
 
       {/* Gallery Section */}
+{/* Gallery Section */}
 <section id="gallery" className="gallery">
   <h2>Our Work</h2>
   <div className="instagram-feed-container">
-    <div class="elfsight-app-8d0224b-f4eb-491a-8b84-47fe5a5bd765" data-elfsight-app-lazy></div>
+    <div className="elfsight-app-78d0224b-f4eb-491a-8b84-47fe5a5bd765" data-elfsight-app-lazy></div>
   </div>
 </section>
 
