@@ -145,23 +145,31 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="contact">
-        <h2>Get In Touch</h2>
-        <div className="contact-info">
-          <div className="contact-item">
-            <h3>📍 Location</h3>
-            <p>Concord, CA</p>
-          </div>
-          <div className="contact-item">
-            <h3>📞 Instagram</h3>
-            <p>@lasheswlex</p>
-          </div>
-          <div className="contact-item">
-            <h3>✉️ Email</h3>
-            <p>lasheswlex@gmail.com</p>
-          </div>
-        </div>
-      </section>
+      {/* Contact Section */}
+<section id="contact" className="contact">
+  <h2>Get In Touch</h2>
+  <div className="contact-info">
+    <div className="contact-item">
+      <h3>📍 Location</h3>
+      <p>Concord, CA</p>
+    </div>
+    <div className="contact-item">
+      <h3>anything you can think of</h3>
+      <p>idk what to put here just lmk...</p>
+    </div>
+    <div className="contact-item">
+      <h3>✉️ Email</h3>
+      <p>lasheswlex@gmail.com</p>
+    </div>
+  </div>
+  
+  <div className="social-links">
+    <h3>Follow Us</h3>
+    <a href="https://www.instagram.com/lasheswlex" target="_blank" rel="noopener noreferrer" className="ig-link">
+      📸 @lasheswlex
+    </a>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="footer">
