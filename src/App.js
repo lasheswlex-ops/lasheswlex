@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
 
+import photo1 from './images/IMG_6345.JPG';
+import photo2 from './images/IMG_6593.JPG';
+import photo3 from './images/IMG_6613.JPG';
+import photo4 from './images/IMG_7431.JPG';
 
 function App() {
   const scrollToSection = (section) => {
@@ -15,7 +19,7 @@ function App() {
       {/* Navigation */}
       <nav className="navbar">
         <div className="nav-container">
-         <h1 className="logo"><span className="lash-emoji">✨</span> LashesWLex</h1>
+          <h1 className="logo"><span className="lash-emoji">✨</span> LashesWLex</h1>
           <ul className="nav-links">
             <li><button onClick={() => scrollToSection('home')}>Home</button></li>
             <li><button onClick={() => scrollToSection('services')}>Services</button></li>
@@ -33,6 +37,103 @@ function App() {
           <button className="cta-button" onClick={() => scrollToSection('booking')}>
             Book Your Appointment
           </button>
+        </div>
+      </section>
+
+      {/* Contact & Hours Section */}
+      <section className="contact-header">
+        <div className="contact-header-grid">
+          <div className="contact-header-item">
+            <h3>📍 Location</h3>
+            <p>Concord, CA</p>
+          </div>
+          <div className="contact-header-item">
+            <h3>⏰ Hours</h3>
+            <p>Tuesday - Saturday</p>
+            <p className="small">Open</p>
+            <p>Sunday - Monday</p>
+            <p className="small">Closed</p>
+          </div>
+          <div className="contact-header-item">
+            <h3>📞 Contact</h3>
+            <p>Text Only</p>
+            <p className="phone">(Your Number)</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Policies Section */}
+      <section className="policies">
+        <h2>Policies & Information</h2>
+        <div className="policies-grid">
+          <div className="policy-card">
+            <h3>💰 Deposits</h3>
+            <p>$20 deposit via Venmo or Cash App within an hour of booking required</p>
+          </div>
+
+          <div className="policy-card">
+            <h3>💳 Payments</h3>
+            <p><strong>Venmo:</strong> Your Handle</p>
+            <p><strong>Cash App:</strong> Your Tag</p>
+            <p>Cash only for remaining balance</p>
+          </div>
+
+          <div className="policy-card">
+            <h3>📍 Address</h3>
+            <p>Address is sent through email/text when you book</p>
+            <p>Please put valid email/phone number</p>
+            <p>You will get address the day before</p>
+          </div>
+
+          <div className="policy-card">
+            <h3>⏱️ Late Arrivals</h3>
+            <p>Please arrive on time! A 5 minute grace period will be given</p>
+            <p>After 5 mins, appointment is cancelled</p>
+            <p>If exempted, $20 fee is applied</p>
+          </div>
+
+          <div className="policy-card">
+            <h3>❌ Cancellation</h3>
+            <p>A 48 hour notice must be applicable</p>
+            <p>If less than 48 hours, $20 fee applied</p>
+          </div>
+
+          <div className="policy-card">
+            <h3>🔄 Refunds</h3>
+            <p>No refunds for deposits or full set</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Preparation Section */}
+      <section className="preparation">
+        <h2>Prepare For Your Appointment</h2>
+        <div className="preparation-content">
+          <div className="prep-column">
+            <ul>
+              <li>Remove all makeup</li>
+              <li>Avoid caffeine</li>
+              <li>Bring balance in cash only</li>
+              <li>No extra guests</li>
+            </ul>
+          </div>
+          <div className="prep-column">
+            <ul>
+              <li>Arrive on time</li>
+              <li>Come with clean lashes</li>
+              <li>Use restroom before</li>
+              <li>Cancel if feeling sick</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Tagging Section */}
+      <section className="photo-tagging">
+        <div className="tagging-content">
+          <h2>Tag Me To Be Featured</h2>
+          <p className="tagline">I love your selfies!</p>
+          <p className="subtitle">Please choose a service below</p>
         </div>
       </section>
 
@@ -103,13 +204,12 @@ function App() {
       </section>
 
       {/* Gallery Section */}
-{/* Gallery Section */}
-<section id="gallery" className="gallery">
-  <h2>Our Work</h2>
-  <div className="instagram-feed-container">
-    <div className="elfsight-app-78d0224b-f4eb-491a-8b84-47fe5a5bd765" data-elfsight-app-lazy></div>
-  </div>
-</section>
+      <section id="gallery" className="gallery">
+        <h2>Our Work</h2>
+        <div className="instagram-feed-container">
+          <div className="elfsight-app-78d0224b-f4eb-491a-8b84-47fe5a5bd765" data-elfsight-app-lazy></div>
+        </div>
+      </section>
 
       {/* Booking Section */}
       <section id="booking" className="booking">
@@ -122,40 +222,40 @@ function App() {
           <button className="booking-button" onClick={() => {
   window.open('https://app.squareup.com/appointments/book/gilb366psvk4r4/LCCB3VAS3CVDG/start', '_blank');
 }}>
-  Reserve Your Spot
+  Reserve Your Spot (No Payment Required)
 </button>
           <p className="booking-alternate">
-            Or contact us directly at your phone number or email!
+            After booking, send your $20 deposit via Venmo or Cash App
           </p>
         </div>
       </section>
 
       {/* Contact Section */}
-      {/* Contact Section */}
-<section id="contact" className="contact">
-  <h2>Get In Touch</h2>
-  <div className="contact-info">
-    <div className="contact-item">
-      <h3>📍 Location</h3>
-      <p>Concord, CA</p>
-    </div>
-    <div className="contact-item">
-      <h3>anything you can think of</h3>
-      <p>idk what to put here just lmk...</p>
-    </div>
-    <div className="contact-item">
-      <h3>✉️ Email</h3>
-      <p>lasheswlex@gmail.com</p>
-    </div>
-  </div>
-  
-  <div className="social-links">
-    <h3>Follow Us</h3>
-    <a href="https://www.instagram.com/lasheswlex" target="_blank" rel="noopener noreferrer" className="ig-link">
-      📸 @lasheswlex
-    </a>
-  </div>
-</section>
+      <section id="contact" className="contact">
+        <h2>Get In Touch</h2>
+        <div className="contact-info">
+          <div className="contact-item">
+            <h3>📍 Location</h3>
+            <p>Concord, CA</p>
+          </div>
+          <div className="contact-item">
+            <h3>📞 Phone</h3>
+            <p>Text Only</p>
+            <p>(Your Number)</p>
+          </div>
+          <div className="contact-item">
+            <h3>✉️ Email</h3>
+            <p>lasheswlex@gmail.com</p>
+          </div>
+        </div>
+        
+        <div className="social-links">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com/lasheswlex" target="_blank" rel="noopener noreferrer" className="ig-link">
+            📸 @lasheswlex
+          </a>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="footer">

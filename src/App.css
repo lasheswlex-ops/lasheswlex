@@ -1,27 +1,3 @@
-@keyframes blink {
-  0%, 49%, 100% {
-    opacity: 1;
-  }
-  50%, 99% {
-    opacity: 0.3;
-  }
-}
-
-@keyframes glow {
-  0%, 100% {
-    text-shadow: 0 0 10px #6fa876, 0 0 20px rgba(111, 168, 118, 0.5);
-  }
-  50% {
-    text-shadow: 0 0 20px #6fa876, 0 0 30px rgba(111, 168, 118, 0.8);
-  }
-}
-
-.lash-emoji {
-  display: inline-block;
-  animation: blink 3s infinite, glow 2s infinite;
-  font-size: 1.2em;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -90,6 +66,30 @@ body {
   transform: translateY(-2px);
 }
 
+@keyframes blink {
+  0%, 49%, 100% {
+    opacity: 1;
+  }
+  50%, 99% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 10px #6fa876, 0 0 20px rgba(111, 168, 118, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px #6fa876, 0 0 30px rgba(111, 168, 118, 0.8);
+  }
+}
+
+.lash-emoji {
+  display: inline-block;
+  animation: blink 3s infinite, glow 2s infinite;
+  font-size: 1.2em;
+}
+
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, #f0f8f5 0%, #e8f4f0 100%);
@@ -154,6 +154,189 @@ body {
 .booking-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 35px rgba(90, 143, 111, 0.35);
+}
+
+/* Contact & Hours Section */
+.contact-header {
+  padding: 3rem 2rem;
+  background: #f0f8f5;
+  border-top: 2px solid #d4e8e0;
+  border-bottom: 2px solid #d4e8e0;
+}
+
+.contact-header-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  text-align: center;
+}
+
+.contact-header-item h3 {
+  color: #6fa876;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.contact-header-item p {
+  color: #555;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.contact-header-item .small {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.contact-header-item .phone {
+  font-weight: 700;
+  color: #2d5a47;
+}
+
+/* Policies Section */
+.policies {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.policies h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2d5a47;
+  font-weight: 800;
+}
+
+.policies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.policy-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 2px solid #e8f4f0;
+  box-shadow: 0 8px 25px rgba(90, 143, 111, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.policy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(90, 143, 111, 0.2);
+  border-color: #6fa876;
+}
+
+.policy-card h3 {
+  color: #6fa876;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.policy-card p {
+  color: #555;
+  line-height: 1.8;
+  margin: 0.8rem 0;
+  font-size: 1rem;
+}
+
+.policy-card strong {
+  color: #2d5a47;
+  font-weight: 700;
+}
+
+/* Preparation Section */
+.preparation {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #f0f8f5 0%, #e8f4f0 100%);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.preparation h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2d5a47;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.preparation-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.prep-column {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(90, 143, 111, 0.1);
+}
+
+.prep-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prep-column li {
+  color: #555;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f8f5;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.prep-column li:before {
+  content: '✓';
+  color: #6fa876;
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+
+.prep-column li:last-child {
+  border-bottom: none;
+}
+
+/* Photo Tagging Section */
+.photo-tagging {
+  padding: 5rem 2rem;
+  background: #2d5a47;
+  text-align: center;
+  color: white;
+}
+
+.tagging-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #6fa876;
+}
+
+.tagline {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin: 1rem 0;
+  color: #d4e8e0;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #b0cfc5;
+  margin-top: 2rem;
 }
 
 /* Services Section */
@@ -252,13 +435,50 @@ body {
 .gallery h2 {
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: #2d5a47;
   font-weight: 800;
 }
 
 .gallery h2::after {
   content: ' 📸';
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(90, 143, 111, 0.15);
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-placeholder {
+  background: linear-gradient(135deg, #d4e8e0 0%, #e8f4f0 100%);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .instagram-feed-container {
@@ -268,24 +488,6 @@ body {
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(90, 143, 111, 0.15);
-}
-
-.instagram-feed-container .elfsight-app-8d0224b-f4eb-491a-8b84-47fe5a5bd765 {
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .gallery {
-    padding: 3rem 1rem;
-  }
-
-  .gallery h2 {
-    font-size: 2rem;
-  }
-
-  .instagram-feed-container {
-    padding: 1.5rem;
-  }
 }
 
 /* Booking Section */
@@ -456,23 +658,38 @@ body {
     font-size: 1rem;
   }
 
-  .cta-button {
-    padding: 0.9rem 2rem;
-    font-size: 1rem;
-  }
-
-  .services h2,
-  .gallery h2,
-  .booking h2,
-  .contact h2 {
-    font-size: 2rem;
-  }
-
-  .services-grid {
+  .contact-header-grid {
     gap: 1.5rem;
   }
 
-  .service-card {
+  .policies-grid,
+  .preparation-content,
+  .services-grid,
+  .contact-info {
+    gap: 1.5rem;
+  }
+
+  .policies h2,
+  .services h2,
+  .gallery h2,
+  .booking h2,
+  .contact h2,
+  .preparation h2,
+  .tagging-content h2 {
+    font-size: 2rem;
+  }
+
+  .policy-card,
+  .service-card,
+  .contact-item {
     padding: 1.8rem;
+  }
+
+  .booking-content {
+    padding: 1.5rem;
+  }
+
+  .instagram-feed-container {
+    padding: 1.5rem;
   }
 }
