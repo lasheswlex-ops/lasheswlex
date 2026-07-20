@@ -207,7 +207,41 @@ function App() {
         </div>
       </section>
 
-      {/* Booking Section */}
+      {/* Payment Information Section */}
+<section className="payment-info">
+  <h2>Payment Information</h2>
+  <div className="payment-grid">
+    <div className="payment-card">
+      <h3>💰 Deposit Required</h3>
+      <p className="deposit-amount">$20</p>
+      <p>Send within 1 hour of booking to secure your appointment</p>
+    </div>
+
+    <div className="payment-card">
+      <h3>Venmo</h3>
+      <p className="payment-handle">@YourVenmoHandle</p>
+      <p className="small-text">Add memo: "Lash Appointment"</p>
+    </div>
+
+    <div className="payment-card">
+      <h3>Cash App</h3>
+      <p className="payment-handle">$YourCashAppTag</p>
+      <p className="small-text">Add note: "Lash Appointment"</p>
+    </div>
+  </div>
+
+  <div className="payment-instructions">
+    <h3>How It Works</h3>
+    <ol>
+      <li>Book your appointment below</li>
+      <li>Send $20 deposit via Venmo or Cash App</li>
+      <li>Receive confirmation with appointment details</li>
+      <li>Pay remaining balance in cash on appointment day</li>
+    </ol>
+  </div>
+</section>
+
+{/* Booking Section */}
       <section id="booking" className="booking">
         <h2>Book Your Appointment</h2>
         <p>Select your service and choose a time that works for you!</p>
